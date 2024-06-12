@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ayowainc.quizbox"
+    xmlns:dist="http://schemas.android.com/apk/distribution">
+
+    <dist:module dist:instant="true" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+        <service
+            android:name=".Background_Music.MusicServiceActivity"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".Category_Levels.Marketing.MarketingBeginnerActivity"
+            android:exported="false" />
+        <activity android:name=".Category_Levels.Marketing.MarketingProfessionalActivity"
+            android:exported="false" />
+        <activity android:name=".Category_Levels.Marketing.MarketingWorldClassActivity"
+            android:exported="false" />
+        <activity android:name=".Category_Levels.History.HistoryWorldClassActivity"
+            android:exported="false" />
+        <activity android:name=".Category_Levels.History.HistoryProfessionalActivity"
+            android:exported="false" />
+        <activity android:name=".Category_Levels.History.HistoryBeginnerActivity"
+            android:exported="false" />
+        <activity android:name=".Category_Levels.Programming.ProgrammingBeginnerActivity"
+            android:exported="false" />
+        <activity android:name=".Category_Levels.Programming.ProgrammingProfessionalActivity"
+            android:exported="false" />
+        <activity android:name=".Category_Levels.Programming.ProgrammingWorldClassActivity"
+            android:exported="false" />
+        <activity android:name=".Category_Levels.Multimedia.MultimediaWorldClassActivity"
+            android:exported="false" />
+        <activity android:name=".Category_Levels.Multimedia.MultimediaProfessionalActivity"
+            android:exported="false" />
+        <activity android:name=".Category_Levels.Multimedia.MultimediaBeginnerActivity"
+            android:exported="false" />
+        <activity android:name=".Category_Levels.All_Knowledge.AllKnowledgeQuizActivity"
+            android:exported="false" />
+        <activity android:name=".AboutUsActivity"
+            android:exported="false" />
+        <activity android:name=".User.UserProfileActivity"
+            android:exported="false" />
+        <activity android:name=".MenuHomeScreenActivity"
+            android:exported="false" />
+        <activity android:name=".User.SignUpActivity"
+            android:exported="false" />
+        <activity android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".User.LoginActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
